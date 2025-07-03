@@ -1,4 +1,3 @@
-/* Apply fonts and layout */
 body {
   font-family: 'Open Sans', sans-serif;
   color: darkblue;
@@ -6,12 +5,48 @@ body {
   margin: 10px 50px;
 }
 
-/* Heading styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3 {
   font-family: 'Oswald', sans-serif;
 }
 
-/* Ensure logos/images are inline with text */
+/* Navigation bar styling */
+.nav-bar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #e0e0ff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.nav-bar li a:hover {
+  text-decoration: underline;
+}
+
+/* Section layout for columns */
+.browser-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Each section column */
+.browser-sections section {
+  width: 300px;
+  box-sizing: border-box;
+}
+
 img {
   vertical-align: middle;
 }
